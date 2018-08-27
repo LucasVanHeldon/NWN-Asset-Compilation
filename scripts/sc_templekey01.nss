@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_templekey01
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/10/2004 11:19:11 PM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "FalseMerchantPlot") == 0))
+        return FALSE;
+
+    return TRUE;
+}

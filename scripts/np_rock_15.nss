@@ -1,0 +1,15 @@
+//::///////////////////////////////////////////////
+//:: FileName np_rock_15
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 26/08/2002 9:08:13 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Give the speaker the items
+    CreateItemOnObject("nw_wswmls002", GetPCSpeaker(), 1);
+     // Set the variables
+    SetLocalInt(GetPCSpeaker(), "used_rock", 1);
+
+}

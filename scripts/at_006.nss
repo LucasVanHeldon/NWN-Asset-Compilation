@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName at_006
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/26/2004 9:42:08 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+void main()
+{
+	// Give the speaker some gold
+	RewardPartyGP(200, GetPCSpeaker());
+
+	// Give the speaker some XP
+	RewardPartyXP(500, GetPCSpeaker());
+
+}

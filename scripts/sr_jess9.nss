@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_jess9
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/11/2002 2:20:47 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+void main()
+{
+	// Give the speaker some gold
+	GiveGoldToCreature(GetPCSpeaker(), 500);
+
+	// Give the speaker some XP
+	RewardPartyXP(50, GetPCSpeaker());
+
+}

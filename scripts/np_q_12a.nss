@@ -1,0 +1,15 @@
+ //::///////////////////////////////////////////////
+//:: FileName np_q_12a
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 28/08/2002 12:25:01 AM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    object oPC = GetLastUsedBy();
+    SetLocalInt(oPC, "quest_1", 200);
+    AddJournalQuestEntry("iQ1", 200, oPC, TRUE, FALSE, FALSE);
+
+}

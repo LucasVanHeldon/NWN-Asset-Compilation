@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_have_key
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 3/31/2003 9:47:16 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "PortcullisKey"))
+		return FALSE;
+
+	return TRUE;
+}

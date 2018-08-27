@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_beemanbear8
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/10/2002 11:37:52 AM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+void main()
+{
+	// Give the speaker some XP
+	RewardPartyXP(50, GetPCSpeaker());
+
+	// Give the speaker the items
+	CreateItemOnObject("innerkeepkey", GetPCSpeaker(), 1);
+
+}

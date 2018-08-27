@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_07e_insight
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/23/2002 10:48:14 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_EASY, SKILL_LORE, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

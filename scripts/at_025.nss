@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName at_025
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 8/11/2005 8:56:37 AM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+void main()
+{
+	// Give the speaker some gold
+	GiveGoldToCreature(GetPCSpeaker(), 500);
+
+	// Give the speaker some XP
+	RewardPartyXP(1000, GetPCSpeaker());
+
+}

@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_h3openlock
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/22/2002 2:25:37 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_MEDIUM, SKILL_OPEN_LOCK, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

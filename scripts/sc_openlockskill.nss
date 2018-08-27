@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_openlockskill
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 12/10/2003 11:18:23 PM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+	// Make sure the player has the required skills
+	if(!GetHasSkill(SKILL_OPEN_LOCK, GetPCSpeaker()))
+		return FALSE;
+
+	return TRUE;
+}

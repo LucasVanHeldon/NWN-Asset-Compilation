@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName at_giveopendrkey
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/24/2004 1:19:36 AM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+void main()
+{
+    // Give the speaker the items
+    CreateItemOnObject("opendoor1key", GetPCSpeaker(), 1);
+    RewardPartyXP(1000, GetPCSpeaker(), TRUE);
+
+}

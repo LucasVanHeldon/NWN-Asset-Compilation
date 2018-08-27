@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_beemanbear2
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/10/2002 12:57:45 AM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Make sure the player has the required skills
+    if(GetSkillRank(SKILL_ANIMAL_EMPATHY, GetPCSpeaker()) < 4)
+        return FALSE;
+
+    return TRUE;
+}

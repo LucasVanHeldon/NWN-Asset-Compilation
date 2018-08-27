@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sr_sabine8
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/9/2002 1:13:54 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Give the speaker the items
+    CreateItemOnObject("coc_q1_plot8", GetPCSpeaker(), 1);
+
+    // Update the JournalEntry
+    AddJournalQuestEntry("coc_q1_union", 8, GetPCSpeaker());
+
+}

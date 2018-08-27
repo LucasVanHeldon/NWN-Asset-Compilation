@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_openlock_med
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 12/10/2003 11:21:19 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_MEDIUM, SKILL_OPEN_LOCK, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}
